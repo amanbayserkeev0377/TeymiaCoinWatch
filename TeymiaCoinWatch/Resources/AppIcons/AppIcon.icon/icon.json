@@ -1,0 +1,32 @@
+{
+  "fill" : "automatic",
+  "groups" : [
+    {
+      "layers" : [
+        {
+          "glass" : false,
+          "image-name" : "vecteezy_coveted-retro-a-single-glowing-crystal-shard-with-sharp_60339184.png",
+          "name" : "vecteezy_coveted-retro-a-single-glowing-crystal-shard-with-sharp_60339184",
+          "position" : {
+            "scale" : 0.21,
+            "translation-in-points" : [
+              0,
+              0
+            ]
+          }
+        }
+      ],
+      "shadow" : {
+        "kind" : "neutral",
+        "opacity" : 0.5
+      },
+      "translucency" : {
+        "enabled" : true,
+        "value" : 0.5
+      }
+    }
+  ],
+  "supported-platforms" : {
+    "squares" : "shared"
+  }
+}

@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  TeymiaCoinWatch
-//
-//  Created by Aman Bayserkeev on 14/2/26.
-//
-
 import UIKit
 
 @main
@@ -13,7 +6,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        let titleFont = UIFont.rounded(ofSize: 18, weight: .semibold)
+        let largeTitleFont = UIFont.rounded(ofSize: 34, weight: .bold)
+
+        let standardAppearance = UINavigationBarAppearance()
+        standardAppearance.configureWithDefaultBackground()
+        standardAppearance.titleTextAttributes = [.font: titleFont]
+        standardAppearance.largeTitleTextAttributes = [.font: largeTitleFont]
+        
+        let scrollEdgeAppearance = UINavigationBarAppearance()
+        scrollEdgeAppearance.configureWithTransparentBackground()
+        scrollEdgeAppearance.titleTextAttributes = [.font: titleFont]
+        scrollEdgeAppearance.largeTitleTextAttributes = [.font: largeTitleFont]
+        
+        let navBar = UINavigationBar.appearance()
+        navBar.standardAppearance = standardAppearance
+        navBar.scrollEdgeAppearance = scrollEdgeAppearance
+        navBar.tintColor = .label
+        
         return true
     }
 
